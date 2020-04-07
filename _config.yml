@@ -1,0 +1,23 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: >> Doogz' Dimension
+email: wdugan7@gmail.com
+
+#write html inside the double quotes to display in jumbotron
+description: "<h3>Welcome! to my blog</h3>"
+
+
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://wdoogz.github.io" # the base hostname & protocol for your site
+twitter_username: wdoogz
+github_username:  wdoogz
+
+# Build settings
+markdown: kramdown
