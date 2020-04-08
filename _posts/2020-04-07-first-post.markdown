@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Down the rabbit hole"
+title: "./Down the rabbit hole"
 date: 2020-04-07 22:22:00 +0500
 categories: jekyll update
 author: "Doogz"
