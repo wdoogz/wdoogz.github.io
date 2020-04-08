@@ -4,7 +4,7 @@ title: Github
 permalink: /github/
 ---
 
-<span class="page-tagline"><marquee scrollamount="7" behavior="alternate" scrolldelay="100" direction="down">Like my work?</marquee></span>
+<span class="page-tagline"><marquee scrollamount="7" behavior="alternate" scrolldelay="100">Like my work?</marquee></span>
 
 
 
