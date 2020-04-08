@@ -31,7 +31,7 @@ permalink: /aboutme/
       &nbsp;- Management Information Systems<br />
       &nbsp;- Cyber Security and Digital Forensics<br /><br />
       
-      If you have any questions or comments about anything in my posts feel free to message me on Twitter!<br />
-      <center><img src="https://drive.google.com/thumbnail?id=16xK7sQ_Tbu_7gCEerOqRGE_DBtlVES_8" width="150" height = "300"></center>
+      If you have any questions or comments about anything in my posts feel free to message me on Twitter!<br /><br />
+      <center><img src="https://drive.google.com/thumbnail?id=16xK7sQ_Tbu_7gCEerOqRGE_DBtlVES_8" width="150" height = "280"></center>
   </div>
 </p>
