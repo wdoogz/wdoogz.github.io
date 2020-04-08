@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Github
-permalink: /download/
+permalink: /github/
 ---
 
 <span class="page-tagline">Like my work?</span>
