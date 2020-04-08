@@ -10,7 +10,7 @@ permalink: /aboutme/
   Who am I?
   </div>
 <p>  <div class="manual-content">
-      I am a twenty-something year old duderoni from the hills of central PA! (Yes near the little league world series)
+      &nbsp;I am a twenty-something year old duderoni from the hills of central PA! (Yes near the little league world series)
       I am an alumni of The University of Pittsburgh at Bradford, Class of 2019.
       I love to fish, ride fourwheelers, play guitar, drink a few craft beers, and simply create things! :)
 
@@ -23,7 +23,7 @@ permalink: /aboutme/
   </div>
 <p>  <div class="manual-content">
 
-      Currently I am an `Operations Engineer` at Verzion Media. I work under the Communications and Publishing side of things. I love to automate anything I have to do more than one time. I do a lot of side projects at home to further my knowledge on this vast industry.<br /><br />
+      &nbsp;Currently I am an Operations Engineer at Verzion Media. I work under the Communications and Publishing side of things. I love to automate anything I have to do more than one time. I do a lot of side projects at home to further my knowledge on things in this vast industry.<br /><br />
 
       I graduated with a Bachelors degree in Computer Information Systems and Technology<br />
       I also received minors in the following:<br />
