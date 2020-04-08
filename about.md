@@ -1,87 +1,36 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About me
+permalink: /aboutme/
 ---
 <div class="man-title">
-  UP AND RUNNING WITH DevJournal
+  Wesley Dugan
 </div>
 <div class="manual manual-title">
-  Posting
+  Who am I?
   </div>
 <p>  <div class="manual-content">
-
-      - Create a .markdown file inside <code class="highlighter-rouge">_posts</code> folder.<br />
-      - Name the file according to the format YY-MM-DD-[short name for your post].<br />
-      &nbsp;&nbsp;&nbsp;<code>2016-03-30-i-love-design.markdown</code><br />
-      - Write the <a href="jekyll">Front Matter</a> and content in the file.<br><br>
-      <div class="example">
-
-        <div class="highlight">
-        <pre>
-          ---
-          layout: post | default | page
-          title:  String<span class="hint"> Post Title</span>
-          date:   Time Stamp
-          categories: String | Array of Strings<span class="hint"> Category / Categories </span>
-          ---
-        </pre>
-        </div>
-
-      </div>
-      <div class="example">
-        <div class="highlight">
-        <pre>
-        ---
-        layout: post
-        title:  "The One with the Blackout"
-        date:   2016-03-30 19:45:31 +0530
-        categories: ["life", "friends"]
-        ---
-      </pre>
-    </div>
-      </div>
-
-
+      I am a twenty-something year old duderoni from the hills of central PA! (Yes near the little league world series)
+      I am an alumni of The University of Pittsburgh at Bradford, Class of 2019.
+      I love to fish, ride fourwheelers, drink a few craft beers, and simply create things! A true engineer at hear :)
 
 </p>
 </div>
 <p><br /></p>
 
   <div class="manual manual-title">
-  Create Pages
+  What do I do?
   </div>
 <p>  <div class="manual-content">
 
-      - Create a .md file in the root directory.<br />
-      - Name the file with the desired page link name.<br />
-        &nbsp;&nbsp;&nbsp;<code>about.md</code><br />
-          &nbsp;&nbsp;&nbsp;<code>design.md</code><br />
-      - Write the <a href="jekyll">Front Matter</a> and content in the file.<br><br>
-      <div class="highlight">
+      Currently I am an `Operations Engineer` at Verzion Media. I work under the Communications and Publishing side of things. I love to automate anything I have to do more than one time. I do _a_ _lot_ of side projects at home to further my knowledge on this vast industry.
 
-
-        <pre>
-          ---
-          layout: page
-          title: String <span class="hint">Title of the webpage</span>
-          permalink: / String / <span class="hint">Permalink for the webpage</span>
-          tagline: String <span class="hint">Optional DevJournal Feature : Tagline for the page</span>
-          ---
-      </pre><br />
-    </div><br>
-      <div class="highlight">
-
-        <pre>
-        ---
-        layout: page
-        title:  "Science"
-        permalink:   /science/
-        tagline : "Humanity is overrated."
-        ---
-      </pre>
-      </div>
-
-
+      I graduated with a Bachelors degree in `Computer Information Systems and Technology`
+      I also received minors in the following:
+      - `Network and Systems Administration`
+      - `Management Information Systems`
+      - `Cyber Security and Digital Forensics`
+      
+      If you have any questions or comments about anything in my posts feel free to message me on Twitter!
   </div>
 </p>
