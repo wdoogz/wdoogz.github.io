@@ -16,7 +16,7 @@ permalink: /github/
     <center><i class="fa fa-heart"></i> Follow my Repo!<i class="fa fa-heart"></i></center>
     <br />
     <center>
-      <iframe src="https://ghbtns.com/github-btn.html?user=wdoogz&amp;type=follow&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="200px" height="30px"></iframe>
+      <iframe src="https://ghbtns.com/github-btn.html?user=wdoogz&amp;type=follow&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="300px" height="40px"></iframe>
     </center>
   </div>
   <center>GitHub Repository
