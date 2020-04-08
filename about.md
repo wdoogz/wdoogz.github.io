@@ -14,8 +14,8 @@ permalink: /aboutme/
       I am an alumni of The University of Pittsburgh at Bradford, Class of 2019.
       I love to fish, ride fourwheelers, drink a few craft beers, and simply create things! A true engineer at hear :)
 
+  </div>
 </p>
-</div>
 <p><br /></p>
 
   <div class="manual manual-title">
