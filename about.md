@@ -32,5 +32,6 @@ permalink: /aboutme/
       &nbsp;- Cyber Security and Digital Forensics\n
       
       If you have any questions or comments about anything in my posts feel free to message me on Twitter!
+      <center><img src="https://drive.google.com/thumbnail?id=16xK7sQ_Tbu_7gCEerOqRGE_DBtlVES_8" width="150" height = "300"></center>
   </div>
 </p>
