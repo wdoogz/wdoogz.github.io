@@ -12,7 +12,7 @@ permalink: /aboutme/
 <p>  <div class="manual-content">
       I am a twenty-something year old duderoni from the hills of central PA! (Yes near the little league world series)
       I am an alumni of The University of Pittsburgh at Bradford, Class of 2019.
-      I love to fish, ride fourwheelers, drink a few craft beers, and simply create things! A true engineer at hear :)
+      I love to fish, ride fourwheelers, play guitar, drink a few craft beers, and simply create things! :)
 
   </div>
 </p>
