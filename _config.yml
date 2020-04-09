@@ -9,6 +9,7 @@
 title: ">> Doogz' Dimension"
 email: wdugan7@gmail.com
 
+github_comments_repository: wdoogz/blog_comments
 #write html inside the double quotes to display in jumbotron
 description: "<br /><br /><center><h3>Welcome to Doogz' Dimension!</h3><h5>Do you like coffee? Then you'll like this blog...</h5></center>"
 
