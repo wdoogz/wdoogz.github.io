@@ -46,7 +46,9 @@ body{
   }
 .page-content{
   padding-left: 30em;
+  padding-bottom: 5em;
   padding-right: 30em;
+  overflow: scroll;
   flex: 1 0 auto;
 }
 
