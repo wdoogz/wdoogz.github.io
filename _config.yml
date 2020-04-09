@@ -11,7 +11,7 @@ email: wdugan7@gmail.com
 
 github_comments_repository: wdoogz/blog_comments
 #write html inside the double quotes to display in jumbotron
-description: "<br /><br /><center>Welcome to Doogz' Dimension!<h4>Do you like coffee? Then you'll like this blog...</h4></center>"
+description: "<br /><br /><center><h1>Welcome to Doogz' Dimension!</h1><h3>Do you like coffee? Then you'll like this blog...</h3></center>"
 
 
 
