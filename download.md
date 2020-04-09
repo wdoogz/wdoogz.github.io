@@ -13,7 +13,8 @@ permalink: /github/
     <br />
   </p>
   <div class="download">
-    <center><i class="fa fa-heart"></i>  Follow me below!  <i class="fa fa-heart"></i></center>
+    <center><i class="fa fa-heart"></i>  <h3>Follow me below!</h3>  <i class="fa fa-heart"></i></center>
+    <br />
     <center><a class="github-button" href="https://github.com/wdoogz" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-show-count="true" aria-label="Follow @wdoogz on GitHub">Follow @wdoogz</a></center>
   </div>
 </div>
