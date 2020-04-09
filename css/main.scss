@@ -196,7 +196,10 @@ $on-laptop:        800px;
     }
 }
 
-
+@font-face {
+	font-family: "aracadeclassic";
+	src: url("../assets/ARCADECLASSIC.TFF");
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
