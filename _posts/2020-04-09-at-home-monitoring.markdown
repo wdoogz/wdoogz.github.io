@@ -40,11 +40,11 @@ You could have multiple tables like CPU, MEM, DISK, NETWORK, and all of these ha
 ---
 
 ### Telegraf
-So now we covered graphs, metrics, and storing them. How the hell do we get them from each machine?! So Telegraf is a barebones application it just runs in the background without anyone ever knowing. It's one of those things you set it loose and it works. Telegraf has hundreds of built in checks written in GoLang to go sift through system stats and grab info on them. You can just turn on a check and it'll gather all the default metrics from your system :D.
+So now we covered graphs, metrics, and storing them. How the hell do we get them from each machine?! So Telegraf is a barebones application it just runs in the background without anyone ever knowing. It's one of those things you set it loose and it works. Telegraf has hundreds of built in checks written in GoLang to go sift through system stats and grab info on them. You can just turn on a check and it'll gather all the default metrics from your system :smile:.
 So once Telegraf gets the data it sends it to the configured InfluxDB database and authenticates as a specified user.
 If you made it this far you are probably going insane, but most of all you probably just realized I explained the whole system backwards.
 
-Computer <- Telegraf -> InfluxDB <- Grafana -> Graphs 
+:computer: <- Telegraf -> InfluxDB <- Grafana -> :chart_with_upwards_trend:
 
 Telegraf gets metrics from the computer, sends them to InfluxDB, and Grafana connects to the database and then graphs the metrics.
 
@@ -56,12 +56,12 @@ I am comfortably running this whole monitoring system on a singular RaspberryPi 
 Telegraf uses practically no system resources surprisingly. I believe the biggest resource useage is the grafana web frontend. So why would you ever want this? Well when you have a few Raspberry Pi's, Laptops, and Desktops at home all doing different things, serving different purposes it's nice to know the health of your systems.
 While I am not going to cover how to set up a dashboard and set up alerts, they are handy to have.
 
-If you made it this far thank you for tuning in! Let me know what you think below in the comments, the rest of the post is setting it all up.
+If you made it this far thank you for tuning in! Let me know what you think below in the comments, the rest of the post is setting it all up. :+1:
 
 [Graph Demo!](/assets/Pics/dashboardgraphs.png)
 
 ---
-
+:rocket:
 This guide assumes you are using a RaspberryPi. It shouldn't be very hard to port over.
 
 1) Install Grafana!
