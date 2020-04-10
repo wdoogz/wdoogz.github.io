@@ -133,8 +133,9 @@ sudo dpkg -i telegraf_1.14.0-1_armhf.deb
 sudo systemctl enable telegraf
 sudo systemctl start telegraf
 ```
-
+---
 Go to your web ui, create a dashboard, Grafana offers a quick SQL like query that is half filled in for you already, poke around and see what you can make! ./Monitor -like -a -boss !!
+Create an alert rule on the left under alerting, Create an alert under one of your graphs below the SQL like query, send it to slack and wait patiently for all hello to break loose!
 
 That should be all you need to start creating graphs and dashboards with Grafana, InfluxDB, and Telegraf! :beer:
 
