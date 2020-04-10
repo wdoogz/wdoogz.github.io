@@ -44,7 +44,7 @@ So now we covered graphs, metrics, and storing them. How the hell do we get them
 So once Telegraf gets the data it sends it to the configured InfluxDB database and authenticates as a specified user.
 If you made it this far you are probably going insane, but most of all you probably just realized I explained the whole system backwards.
 
-:computer: <- Telegraf -> InfluxDB <- Grafana -> :chart_with_upwards_trend:
+:computer: :arrow_left: Telegraf :arrow_right: InfluxDB :arrow_left: Grafana :arrow_right: :chart_with_upwards_trend:
 
 Telegraf gets metrics from the computer, sends them to InfluxDB, and Grafana connects to the database and then graphs the metrics.
 
