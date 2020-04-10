@@ -9,7 +9,7 @@ author: "Doogz"
 
 So recently I set up monitoring around all my systems at home that I could get any data from. This post will cover things like what is Grafana, InfluxDB, and Telegraf, and how can I impliment them. At the same time answer questions like why would I want to do this? and how much resources does it use?
     
-Agenda :) :
+Agenda :coffee: :
  - Grafana.
  - Metrics.
  - InfluxDB.
