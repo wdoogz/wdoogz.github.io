@@ -146,5 +146,3 @@ If you are interested in running it on a RedHat system here are the download lin
 [Influx & Telegraf](https://portal.influxdata.com/downloads/) 
 
 [Grafana](https://grafana.com/grafana/download?platform=linux)
-
-![tes](https://gph.is/28RxI7d)
