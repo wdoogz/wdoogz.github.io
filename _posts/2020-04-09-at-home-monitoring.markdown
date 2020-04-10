@@ -56,6 +56,10 @@ I am comfortably running this whole monitoring system on a singular RaspberryPi 
 Telegraf uses practically no system resources surprisingly. I believe the biggest resource useage is the grafana web frontend. So why would you ever want this? Well when you have a few Raspberry Pi's, Laptops, and Desktops at home all doing different things, serving different purposes it's nice to know the health of your systems.
 While I am not going to cover how to set up a dashboard and set up alerts, they are handy to have.
 
+If you made it this far thank you for tuning in! Let me know what you think below in the comments, the rest of the post is setting it all up.
+
+![image](/assets/Pics/dashboardgraphs.png)
+
 ---
 
 This guide assumes you are using a RaspberryPi. It shouldn't be very hard to port over.
@@ -134,8 +138,9 @@ sudo systemctl enable telegraf
 sudo systemctl start telegraf
 ```
 ---
-Go to your web ui, create a dashboard, Grafana offers a quick SQL like query that is half filled in for you already, poke around and see what you can make! ./Monitor -like -a -boss !!
-Create an alert rule on the left under alerting, Create an alert under one of your graphs below the SQL like query, send it to slack and wait patiently for all hello to break loose!
+Go to your web ui, create a dashboard, Grafana offers a quick SQL like query that is half filled in for you already, poke around and see what you can make! ./Monitor -like -a -boss !! Create an alert rule on the left under alerting, Create an alert under one of your graphs below the SQL like query, send it to slack and wait patiently for all hello to break loose!
+
+![image2](/assets/Pics/query.PNG)
 
 That should be all you need to start creating graphs and dashboards with Grafana, InfluxDB, and Telegraf! :beer:
 
