@@ -58,19 +58,18 @@ While I am not going to cover how to set up a dashboard and set up alerts, they 
 
 If you made it this far thank you for tuning in! Let me know what you think below in the comments, the rest of the post is setting it all up.
 
-![image](/assets/Pics/dashboardgraphs.png)
+[Graph Demo!](/assets/Pics/dashboardgraphs.png)
 
 ---
 
 This guide assumes you are using a RaspberryPi. It shouldn't be very hard to port over.
 
 1) Install Grafana!
-    - Debian Based (note you can change "armhf" to "amd64" and it'll work fine):
-    ```
-    sudo apt-get install -y adduser libfontconfig1
-    wget https://dl.grafana.com/oss/release/grafana_6.7.2_armhf.deb
-    sudo dpkg -i grafana_6.7.2_armhf.deb
-    ```
+```
+sudo apt-get install -y adduser libfontconfig1
+wget https://dl.grafana.com/oss/release/grafana_6.7.2_armhf.deb
+sudo dpkg -i grafana_6.7.2_armhf.deb
+```
     
 2) Start the Grafana server
 ```
@@ -85,12 +84,11 @@ telnet 0.0.0.0 3000
 ```
 
 4) If these are open great! If they aren't do the following
-    - Ubuntu: 
-       ```
-        sudo iptables -A INPUT -p tcp -m tcp --dport 3000 -j ACCEPT
-        sudo iptables -A INPUT -p tcp -m tcp --dport 8086 -j ACCEPT
-        sudo iptables-save
-       ```
+```
+sudo iptables -A INPUT -p tcp -m tcp --dport 3000 -j ACCEPT
+sudo iptables -A INPUT -p tcp -m tcp --dport 8086 -j ACCEPT
+sudo iptables-save
+```
        
 5) Next we neeed to get the IP address of your machine running the Grafana server.
 ```
@@ -101,13 +99,12 @@ telnet 0.0.0.0 3000
 5) Go through everything until it asks to add a data source.
 
 5) Now lets install InfluxDB:
-    - Debian Based (You can change the armhf to amd64 for non-RBPi):
-    ```
-    wget https://dl.influxdata.com/influxdb/releases/influxdb_1.7.10_armhf.deb
-    sudo dpkg -i influxdb_1.7.10_hf.deb
-    sudo systemctl enable influxdb
-    sudo systemctl start influxdb
-    ```
+```
+wget https://dl.influxdata.com/influxdb/releases/influxdb_1.7.10_armhf.deb
+sudo dpkg -i influxdb_1.7.10_hf.deb
+sudo systemctl enable influxdb
+sudo systemctl start influxdb
+```
  
 6) How about we create the database and user, First type `influx` and wait for it to come up with a prompt.
 ```
@@ -124,23 +121,23 @@ wget https://dl.influxdata.com/telegraf/releases/telegraf_1.14.0-1_armhf.deb
 sudo dpkg -i telegraf_1.14.0-1_armhf.deb
 ```
 
-9) Now edit `/etc/telegraf/telegraf.conf` with vim
-    - Under the `[[outputs.influxdb]]` section, replace username and password with yours:
-      ```
-      url = "http://localhost:8086"
-      database = "grafana"
-      username = "user"
-      password = "Panther$"
-      ```
+9) Now edit **/etc/telegraf/telegraf.conf** with vim under the __[[outputs.influxdb]]__ section, replace username and password with yours:
+```
+url = "http://localhost:8086"
+database = "grafana"
+username = "user"
+password = "Panther$"
+```
+
 10) Now enable and restart telegraf
 ```
 sudo systemctl enable telegraf
 sudo systemctl start telegraf
 ```
 ---
-Go to your web ui, create a dashboard, Grafana offers a quick SQL like query that is half filled in for you already, poke around and see what you can make! ./Monitor -like -a -boss !! Create an alert rule on the left under alerting, Create an alert under one of your graphs below the SQL like query, send it to slack and wait patiently for all hello to break loose!
+Go to your web ui, create a dashboard, Grafana offers a quick SQL like query that is half filled in for you already, poke around and see what you can make! __./Monitor -like -a -boss__ !! Create an alert rule on the left under alerting, Create an alert under one of your graphs below the SQL like query, send it to slack and wait patiently for all hello to break loose!
 
-![image2](/assets/Pics/query.PNG)
+[SQL query](/assets/Pics/query.PNG)
 
 That should be all you need to start creating graphs and dashboards with Grafana, InfluxDB, and Telegraf! :beer:
 
