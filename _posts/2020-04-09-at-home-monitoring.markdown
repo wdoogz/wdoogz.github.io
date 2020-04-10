@@ -9,7 +9,7 @@ author: "Doogz"
 
 So recently I set up monitoring around all my systems at home that I could get any data from. This post will cover things like what is Grafana, InfluxDB, and Telegraf, and how can I impliment them. At the same time answer questions like why would I want to do this? and how much resources does it use?
     
-Agenda :coffee::
+Agenda :) :
  - Grafana.
  - Metrics.
  - InfluxDB.
@@ -26,8 +26,8 @@ I've been rollin' with Grafana now for a little while and I can't complain much 
 ---
 
 ### Metrics
-Yeah, I'm aware I said above `... graph that data.`, well this is the crazy part right, you don't graph data, you graph metrics. :sunglasses:
-So metrics are a form of data, but when we talk about data we usually think of it as something that doesn't change, like my name for example, I'm Wesley now and I am 99% sure I'll be Wesley tomorrow :smile:. Metrics are always changing, your CPU isn't always going to run at 15% utilization correct? Depending on system load your metrics may change which give us graphs that looks like spikes and squigly lines.
+Yeah, I'm aware I said above `... graph that data.`, well this is the crazy part right, you don't graph data, you graph metrics.
+So metrics are a form of data, but when we talk about data we usually think of it as something that doesn't change, like my name for example, I'm Wesley now and I am 99% sure I'll be Wesley tomorrow. Metrics are always changing, your CPU isn't always going to run at 15% utilization correct? Depending on system load your metrics may change which give us graphs that looks like spikes and squigly lines.
 When we have a metric that spikes to high for to long we need to act on it, but us as humans, only tend to look at these metrics for a reason. For example I'm not going to spend all my waking hours watching my graphs to make sure my damn memory doesn't spike. This is what we have alerts for, we set a threshold and when that is breached for a certain amount of time we say "Ayo buddy! Your machine's memory usage is high!"
 
 ---
@@ -40,11 +40,11 @@ You could have multiple tables like CPU, MEM, DISK, NETWORK, and all of these ha
 ---
 
 ### Telegraf
-So now we covered graphs, metrics, and storing them. How the hell do we get them from each machine?! So Telegraf is a barebones application it just runs in the background without anyone ever knowing. It's one of those things you set it loose and it works. Telegraf has hundreds of built in checks written in GoLang to go sift through system stats and grab info on them. You can just turn on a check and it'll gather all the default metrics from your system :smile:
+So now we covered graphs, metrics, and storing them. How the hell do we get them from each machine?! So Telegraf is a barebones application it just runs in the background without anyone ever knowing. It's one of those things you set it loose and it works. Telegraf has hundreds of built in checks written in GoLang to go sift through system stats and grab info on them. You can just turn on a check and it'll gather all the default metrics from your system :D.
 So once Telegraf gets the data it sends it to the configured InfluxDB database and authenticates as a specified user.
-If you made it this far you are probably going insane, but most of all you probably just realized I explained the whole system backwards :sunglasses:
+If you made it this far you are probably going insane, but most of all you probably just realized I explained the whole system backwards.
 
-:computer: <- Telegraf -> InfluxDB <- Grafana -> :chart_with_upwards_trend: 
+Computer <- Telegraf -> InfluxDB <- Grafana -> Graphs 
 
 Telegraf gets metrics from the computer, sends them to InfluxDB, and Grafana connects to the database and then graphs the metrics.
 
@@ -139,7 +139,7 @@ Go to your web ui, create a dashboard, Grafana offers a quick SQL like query tha
 
 [SQL query](/assets/Pics/query.PNG)
 
-That should be all you need to start creating graphs and dashboards with Grafana, InfluxDB, and Telegraf! :beer:
+That should be all you need to start creating graphs and dashboards with Grafana, InfluxDB, and Telegraf!
 
 If you are interested in running it on a RedHat system here are the download links the configuration should still be the same!
 
