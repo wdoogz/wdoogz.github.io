@@ -53,7 +53,7 @@ But one thing that Linux is lacking in the desktop
 world is the support for gaming. Actually it is not that Linux does not support it.
 It is that gaming companies are not very willing to port their software from a DirectX environment to an 
 OpenGL environment for such a small user base. While I write this blog on an Open Source
-operating system, the harsh reality of it all is, I too, am a Windows user... :sad:
+operating system, the harsh reality of it all is, I too, am a Windows user... :sweat:
 
 ---
 
