@@ -23,7 +23,7 @@ permalink: /aboutme/
   </div>
 <p>  <div class="manual-content">
 
-      &nbsp;Currently I am an Operations Engineer at Verzion Media. I work under the Communications and Publishing side of things. I love to automate anything I have to do more than one time. I do a lot of side projects at home to further my knowledge on things in this vast industry.<br /><br />
+      &nbsp;Currently I am an Operations Engineer at Verizon Media. I work under the Communications and Publishing side of things. I love to automate anything I have to do more than one time. I do a lot of side projects at home to further my knowledge on things in this vast industry.<br /><br />
 
       I graduated with a Bachelors degree in Computer Information Systems and Technology<br />
       I also received minors in the following:<br />
