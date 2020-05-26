@@ -7,42 +7,45 @@ github_comments_issueid: "4"
 author: "Doogz"
 ---
 
-### :coffee: time!!!
-
+:coffee: time! :coffee:
+<br>
+---
 First, I hope everyone is staying safe during these times!
 
 I've been busy chillax'n but I thought I would start a new project. So with my current use of Grafana, 
 InfluxDB, and Telegraf (as you all have seen in my previous posts) I wanted to expand on my monitoring 
 knowledge by learning a new language. So I wrote a GoLang application!
 
+<br>
 ---
 
 ### TL;DR 
-
 This application will take a file/directory as input and parse the log file/files for errors, and send 
 them to the InfluxDB endpoint on my Raspberry Pi.
 
+<br>
 ---
 
 ### Summary and Plans
-
 I have Open Sourced it and added releases, with a few supported OS's (MacOS, Windows, Linux, Linux ARM).
 I have intentions on writing a plugin and submitting a pull request to the Telegraf repo to add it once
 I become more comfortable with Go. However, for now I am on my own. So the source code can be found here 
 --> [log_ripper](https://github.com/wdoogz/log_ripper) <--
 
+<br>
 ---
-
 ### The code
 
 Lets dig into the learning experience I had writing this. It does take arguments when ran, however it is not a
 command line tool, and I did not think this project needed flags to get the job done. So I created two separate 
 GoLang packages, Parser and Poster. 
 
-#### [Parser](https://github.com/wdoogz/log_ripper/blob/master/go/src/parser/parser.go)
+### [Parser](https://github.com/wdoogz/log_ripper/blob/master/go/src/parser/parser.go)
 This is exactly what it says, we need to scrape the logs for `errors` right? So here is what I did to do that.
 
 (Read code comments for an explanation of the code)
+<br>
+
 ```golang
 package parser
 
@@ -89,12 +92,15 @@ func ParseLogDir(dirName string) int {
 }
 ```
 
+<br>
 There are some improvements I could make but I want to add support for both total errors in a Directory
 and total errors for each file in that directory and send that to InfluxDB :smile:
 
-#### [Poster](https://github.com/wdoogz/log_ripper/blob/master/go/src/poster/poster.go)
+### [Poster](https://github.com/wdoogz/log_ripper/blob/master/go/src/poster/poster.go)
 This will send metrics to the InfluxDB endpoint. It takes a few parameters to work such as;
 the InfluxDB host/IP followed by the port, the name of the database, the database username and the database password, along with the error count. 
+
+<br>
 
 ```golang
 package poster
@@ -142,6 +148,7 @@ func Poster(host string, databaseName string, databaseUser string, databasePass 
 }
 ```
 
+<br>
 So my GoLang experience was very slim before starting this project, and it has taught me a lot in the past couple of days.
 Not only about GoLang but how the time series database works as well. This brings us to the main program itself,
 this really is just the control flow of this project.
@@ -150,6 +157,8 @@ this really is just the control flow of this project.
 
 In this we are specifying the arguments, giving a little usage if the args are not met, and then testing
 if the path specified by the user is a directory or a file and acting upon that.
+
+<br>
 
 ```golang
 
@@ -194,9 +203,8 @@ func main() {
 
 }
 ```
-
+<br>
 ---
-
 ### What did I learn
 
 I learned mostly everything you see above, I started with GoLang a week or two ago, I know my package imports 
@@ -204,10 +212,10 @@ aren't correct, and there are a few things that I could change to meet "standard
 learning curve. I could have written this in Python, and been content with it, but the ability to write the same code
 and package it for different OS's is pretty neat, it makes supporting things like this easier. Also, the feeling of accomplishment is greater after learning something new :smile: :+1:
 
+<br>
 ---
-
 ### Demo/Links
-![Graphs](/assets/Pics/log_ripper_pinode1.png#thumbnail)
+[Graph Picture!!](/assets/Pics/log_ripper_pinode1.png#thumbnail)
 
 
 This is the scheduled job that send the data to make the pretty graph above!
@@ -218,11 +226,14 @@ This is the scheduled job that send the data to make the pretty graph above!
 If you are running grafana and influxdb and wanna try this here are the steps!
 
 1) Get the binary for your OS [HERE](https://github.com/wdoogz/log_ripper/releases)
+
 2) Make the file executable on your system and move it to a shared location.
+
 3) schedule a job with the above parameters like this.
-    > `/bin/grafana_log_ripper <log file> <db ip address:<db port> <DB Name> <DB User> <DB Pass>`
 
+    >`/bin/grafana_log_ripper <log file> <db ip address:<db port> <DB Name> <DB User> <DB Pass>`
+
+<br>
 ---
-
 #### Thats all for me today guys & gals! :zzz:
 
