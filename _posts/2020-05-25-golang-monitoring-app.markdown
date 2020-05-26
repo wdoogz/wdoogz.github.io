@@ -9,21 +9,22 @@ author: "Doogz"
 
 :coffee: time! :coffee:
 <br>
+
 ---
 First, I hope everyone is staying safe during these times!
 
 I've been busy chillax'n but I thought I would start a new project. So with my current use of Grafana, 
 InfluxDB, and Telegraf (as you all have seen in my previous posts) I wanted to expand on my monitoring 
 knowledge by learning a new language. So I wrote a GoLang application!
-
 <br>
+
 ---
 
 ### TL;DR 
 This application will take a file/directory as input and parse the log file/files for errors, and send 
 them to the InfluxDB endpoint on my Raspberry Pi.
-
 <br>
+
 ---
 
 ### Summary and Plans
@@ -31,8 +32,8 @@ I have Open Sourced it and added releases, with a few supported OS's (MacOS, Win
 I have intentions on writing a plugin and submitting a pull request to the Telegraf repo to add it once
 I become more comfortable with Go. However, for now I am on my own. So the source code can be found here 
 --> [log_ripper](https://github.com/wdoogz/log_ripper) <--
-
 <br>
+
 ---
 ### The code
 
@@ -153,7 +154,7 @@ So my GoLang experience was very slim before starting this project, and it has t
 Not only about GoLang but how the time series database works as well. This brings us to the main program itself,
 this really is just the control flow of this project.
 
-#### [Main](https://github.com/wdoogz/log_ripper/blob/master/go/src/main.go)
+### [Main](https://github.com/wdoogz/log_ripper/blob/master/go/src/main.go)
 
 In this we are specifying the arguments, giving a little usage if the args are not met, and then testing
 if the path specified by the user is a directory or a file and acting upon that.
@@ -204,6 +205,7 @@ func main() {
 }
 ```
 <br>
+
 ---
 ### What did I learn
 
@@ -213,6 +215,7 @@ learning curve. I could have written this in Python, and been content with it, b
 and package it for different OS's is pretty neat, it makes supporting things like this easier. Also, the feeling of accomplishment is greater after learning something new :smile: :+1:
 
 <br>
+
 ---
 ### Demo/Links
 [Graph Picture!!](/assets/Pics/log_ripper_pinode1.png#thumbnail)
@@ -234,6 +237,7 @@ If you are running grafana and influxdb and wanna try this here are the steps!
     >`/bin/grafana_log_ripper <log file> <db ip address:<db port> <DB Name> <DB User> <DB Pass>`
 
 <br>
+
 ---
 #### Thats all for me today guys & gals! :zzz:
 
