@@ -120,7 +120,7 @@ import (
 // database name, database username, database password
 func Poster(host string, databaseName string, databaseUser string, databasePass string, errorCount int) []byte {
 	var client = &http.Client{}
-	var currentTime = strconv.FormatInt(time.Now().Unix(), 10) // influx needs a unix timestamp
+	var currentTime = strconv.FormatInt(time.Now().Unix(), 10)
 	var hostname, _ = os.Hostname()
     var postURL string = "http://" + host + "/write?db=" + databaseName
     var newErrorCount string = strconv.Itoa(errorCount)
