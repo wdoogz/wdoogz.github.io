@@ -122,15 +122,17 @@ func Poster(host string, databaseName string, databaseUser string, databasePass 
 	var client = &http.Client{}
 	var currentTime = strconv.FormatInt(time.Now().Unix(), 10) // influx needs a unix timestamp
 	var hostname, _ = os.Hostname()
-	var postURL string = "http://" + host + "/write?db=" + databaseName // url of the endpoint to talk to the DB
-    var newErrorCount string = strconv.Itoa(errorCount) 
+    var postURL string = "http://" + host + "/write?db=" + databaseName
+    var newErrorCount string = strconv.Itoa(errorCount)
+
     // This is the "payload" we will be sending the DB
-	var data = strings.NewReader(`log_errors,host=` + hostname + ` value=` + newErrorCount + ` ` + currentTime + `000000000`) 
+    var data = strings.NewReader(`log_errors,host=` + hostname + ` value=` 
+                                 + newErrorCount + ` ` + currentTime + `000000000`) 
     
     // here we specify our post request to the endpoint, and the data along with the Auth header
-	r, err := http.NewRequest("POST", postURL, data)
-	r.Header.Set("Authorization", "Token "+databaseUser+":"+databasePass)
-	if err != nil {
+    r, err := http.NewRequest("POST", postURL, data)
+    r.Header.Set("Authorization", "Token "+databaseUser+":"+databasePass)
+    if err != nil {
 		fmt.Println(err)
     }
     
