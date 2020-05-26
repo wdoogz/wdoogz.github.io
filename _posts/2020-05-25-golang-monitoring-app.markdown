@@ -233,8 +233,7 @@ If you are running grafana and influxdb and wanna try this here are the steps!
 2) Make the file executable on your system and move it to a shared location.
 
 3) schedule a job with the above parameters like this.
-
-    >`/bin/grafana_log_ripper <log file> <db ip address:<db port> <DB Name> <DB User> <DB Pass>`
+ > `/bin/grafana_log_ripper <log file> <db ip address:<db port> <DB Name> <DB User> <DB Pass>`
 
 <br>
 
